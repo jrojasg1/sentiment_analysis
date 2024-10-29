@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- link de bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- parsley -->
+  
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    h1, h3 {
+      color: #343a40;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .badge-negative {
+      background-color: #dc3545;
+    }
+
+    .badge-positive {
+      background-color: #28a745;
+    }
+
+    .badge-neutral {
+      background-color: #ffc107;
+    }
+
+    table {
+      margin-top: 20px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <!-- Code -->
+  <div class="container">
+
+    <!-- Title -->
+    <div class="text-center mb-4">
+      <h1>Analsis de Sentimientos</h1>
+    </div>
+
+    <!-- Estado del Cliente -->
+    <div class="card p-3 mb-4">
+      <div class="d-flex justify-content-between align-items-center" id="sentiment">
+        <h3>Estado del Cliente:</h3>
+        
+      </div>
+    </div>
+
+    <!-- Última Reseña -->
+    <div class="card p-3 mb-4" id="contenedor-datos">
+      <h3>Comentarios:</h3>
+    </div>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <!-- Deals Cerrados del Contacto 
+    <h3>Deals cerrados del contacto</h3>
+    <div class="card p-3 " >
+      <table class="table table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre Oportunidad</th>
+            <th scope="col">Fecha Creación</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Propietario</th>
+          </tr>
+        </thead>
+        <tbody id="deals-description">
+         
+      
+        </tbody>
+      </table>
+    </div>-->
+  </div>
+
+
+
+
+
+  <!-- End code -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- jquery       -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- sdk          -->
+  <script src="https://live.zwidgets.com/js-sdk/1.1/ZohoEmbededAppSDK.min.js"></script>
+  <!-- Script de bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+  <!-- Js -->   
+  <script src="./JS/funciones.js"></script>
+  <!-- dictionary   -->
+  <script src="js/dictionaty.js"></script>
+  <script type="module" src="./JS/main.js"></script>
+
+</body>
+
+</html>
