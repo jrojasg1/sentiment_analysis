@@ -14,7 +14,7 @@
 
 const analyzerResult = async (text) => {
     try {
-        const API_KEY = 'sk-gyi9x4iWB8O3uhiuF_7zLNZxsUZJBg-kCpCGpLXnegT3BlbkFJFD-0SShjvf2IVHthK3zLvaH1vGrTo3ffoRYJrkYNcA'; // Reemplaza con tu clave de API
+        const API_KEY = ''; // Reemplaza con tu clave de API
 
         const response = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',
